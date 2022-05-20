@@ -1,2 +1,2 @@
 # latihan
-Berisi file website hasil latihan dari berbagai sumber
+Hasil latihan dari tutorial WPU
