@@ -52,11 +52,35 @@ body {
 	color: #333;
 }
 
+.top-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	background-color: #1B1F3B;
+	border-bottom: 3px solid purple;
+	z-index: 9999;
+}
+
 .container {
-	width: 900px;
+	width: 960px;
 	background-color: white;
-	margin: auto;
+	margin: 60px auto;
 	box-sizing: border-box;
+	position: relative;
+}
+
+.facebook {
+	width: 256px;
+	height: 256px;
+	background-image: url(img/facebook.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-indent: -9999px;
+	position: absolute;
+	top: -20px;
+	right: -80px;
 }
 
 .header {
@@ -86,39 +110,81 @@ body {
 }
 
 .hero {
-	height: 280px;
+	height: 300px;
 	background-image: url(img/hero.jpg);
 	background-size: cover;
-	background-position: 0 -130px;
+	background-position: 0 -150px;
 	border-top: 5px solid purple;
 	border-bottom: 5px solid darkblue;
 }
 
-.content {
+.main {
+	width: 600px;
 	padding: 20px;
+	box-sizing: border-box;
+	float: left;
 }
 
-.content .judul-artikel{
+.main .judul-artikel{
 	font-size: 28px;
 	font-weight: bold;
 }
 
-.content .penulis {
+.main .penulis {
 	font-size: 11px;
 	margin-top: -5px;
 }
 
-.content p {
+.main p {
 	margin-bottom: 10px;
+	text-align: justify;
+}
+
+.sidebar {
+	width: 300px;
+	float: right;
+	padding: 20px;
+	/*box-sizing: border-box;*/
+}
+
+.sidebar h3 {
+	font-weight: bold;
+	color: #666;
+}
+
+.sidebar img {
+	width: 70px;
+	height: 70px;
+	float: left;
+	padding-right: 10px;
+}
+
+.sidebar p {
+	font: 12px/18px arial;
 	text-align: justify;
 }
 
 .footer {
 	background-color: #333;
-	color: #eaeaea;
-	padding: 10px;
+	color: #eaeaea;	
 }
 
 .footer .copyright {
 	text-align: center;
+	padding: 10px;
+}
+
+/* clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
 }
